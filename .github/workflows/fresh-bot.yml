@@ -19,7 +19,7 @@ jobs:
 
       - name: Bump stale issues (DEBUG)
         uses: GiovanH/fresh-bot@patch-1
-        if: always()
+        if: failure()
         with:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Needs `repo` scope
 
